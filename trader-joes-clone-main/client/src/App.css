@@ -1,0 +1,9 @@
+.menu {
+  padding: 1.5rem;
+}
+.show-menu {
+  display: block;
+}
+.hide-menu {
+  display: none;
+}

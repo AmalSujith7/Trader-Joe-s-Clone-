@@ -1,0 +1,35 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+.divider {
+  transform: rotate(180deg);
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.link-text {
+  text-decoration: none;
+  color: var(--dark-brown-color);
+  font-weight: 600;
+}
+.link-text:hover {
+  color: black;
+  text-decoration: underline;
+}
+.last-path {
+  color: var(--grey-color);
+}
+
+@media only screen and (max-width: 750px) {
+  .breadcrumb {
+    margin: 0;
+  }
+}

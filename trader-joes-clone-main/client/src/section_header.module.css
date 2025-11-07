@@ -1,0 +1,32 @@
+.title {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.title-with-img {
+  margin-bottom: 2.8rem;
+}
+.title::after {
+  content: "";
+  padding: 0.125rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.title img {
+  position: absolute;
+  width: 8rem;
+  top: -200%;
+  right: 1%;
+}
+
+@media only screen and (max-width: 750px) {
+  .title img {
+    display: none;
+  }
+  .title-with-img {
+    margin-bottom: 1.5rem;
+  }
+}
